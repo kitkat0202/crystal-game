@@ -1,6 +1,8 @@
 # crystal-game
 JQuery Assignment -- crystal game
 
+Game live at: <br>
+https://kitkat0202.github.io/crystal-game/
 
 # Finished Product:
 <img src="assets/image/start-pg.png" alt="Finished Index" width="500px"/>
@@ -16,11 +18,15 @@ JQuery Assignment -- crystal game
 
 - The goal of the game is to match your number with the computer's number
 
-- To increase your points, you will have to click the four stations on the bottom each having their own random number.
+- To increase your points, you will have to click the four stations on the bottom each having 
+  their own random number.
 
-- Add up your points to equal the computer's and YOUR WIN POINT GOES UP BY 1 WHOLE POINT! -- pat yourself on the back
+- Add up your points to equal the computer's and YOUR WIN POINT GOES UP BY 1 WHOLE POINT! 
+  -- pat yourself on the back
 
-- Go above the computer's points and YOU HAVE DESTROYED THE KINDOM HEARTS WORLDS!!! LIFE AS WE KNOW IT IS OVER!! -- haha just kidding you will just increase you lose points by 1
+- Go above the computer's points and YOU HAVE DESTROYED THE KINDOM HEARTS WORLDS!!! 
+  LIFE AS WE KNOW IT IS OVER!! 
+  -- haha just kidding you will just increase you lose points by 1
 
 ENJOY!
 

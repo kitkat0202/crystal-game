@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC|Emilys+Candy|Marcellus+SC" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kingdom Hearts - Crystal Game</h1>
+        <div class="score clear">
+            <h3 class="win-box">Win: <span id="win-score">0</span></h3>
+            <h3 class="lose-box">Lose: <span id="lose-score">0</span></h3>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="numbers clear">
+            <div id="computer-number">
+                <h2>Computer Number</h2>
+                <span id="random-number"></span>
+            </div>
+
+            <div id="guess">
+                <h2>Total So Far...</h2>
+                <span id="total"></span>
+            </div>
+        </div>
+
+        <div class="crystals-container clear">
+
+            <div class="crystal-box" id="crys-box0">
+                <img src="assets/image/Station_0.png" class="crystal">
+            </div>
+
+            <div class="crystal-box" id="crys-box1">
+                <img src="assets/image/Station_1.png" class="crystal">
+            </div>
+
+            <div class="crystal-box" id="crys-box2">
+                <img src="assets/image/Station_2.png" class="crystal">
+            </div>
+
+            <div class="crystal-box" id="crys-box3">
+                <img src="assets/image/Station_3.png" class="crystal">
+            </div>
+        </div>
+
+        <div class="win-msg gameover disappear">
+            <p> Congradulations</p>
+            <p>You win!</p>  
+        </div>
+        <div class="lose-msg gameover disappear">
+            <p>Sorry</p>
+            <p>You Lose...</p>    
+        </div>
+        <div class="start-msg gameover">
+            <button id="start-btn">START</button> 
+            <p>WARMING: music will start</p>
+        </div>
+
+        <audio id="bg-audio" loop>
+            <source src="assets/audio/xion.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>

@@ -40,7 +40,8 @@ header {
     width: 100%;
     background-color: #fff;
     letter-spacing: 5px;
-    box-shadow: 0px 30px 60px 0px #fff;  
+    box-shadow: 0px 30px 60px 0px #fff;
+    padding-bottom: 1px;
 
 }
 
@@ -49,44 +50,52 @@ header h1 {
     font-size: 60px;
     line-height: 80px;
     font-family: var(--title);
+    padding-top: 20px;
 }
 
 .score {
-    width: 400px;
+    width: 500px;
+    height: 35px;
     margin: 20px auto;
+    position: relative;
 }
 
 .score h3 {
+    /* display: inline; */
+    /* text-align: center; */
     font-size: 35px;
-    line-height: 60px;
+    /* line-height: 60px; */
 }
 
 .win-box {
-    float: left;
+    position: absolute;
+    left: 0;
 }
 
 .lose-box {
-    float: right;
+    position: absolute;
+    right: 0;
 }
 
 
 /* //////////// Info Center  ////////////// */
 .container {
     width: 100%;
-    padding: 20px 40px;
+    padding: 15px;
     position: relative;
+    max-width: 1340px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .crystals-container, 
 .numbers {
-    margin: 10px auto;
-    padding-left: 4%;
+    margin: 70px auto;
 }
 
 
 .numbers {
-    height: 300px;
-    padding: 40px 250px;
+    width: 810px;
     font-size: 30px;
     text-align: center;
     line-height: 60px;
@@ -94,9 +103,10 @@ header h1 {
 
 .numbers div {
     border: 3px solid var(--box-color);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 400px;
-    height: 150px;
+    height: 130px;
     background-color: #fff;
 }
 
@@ -117,9 +127,9 @@ header h1 {
 }
 
 .crystal-box {
-    width: 20%;
+    width: 25%;
     float: left;
-    margin: 2%;
+    margin: 0;
     opacity: .5;
     transition: var(--trans);
     z-index: 99;
@@ -129,8 +139,13 @@ header h1 {
     opacity: 1;
 }
 
+.crystal-box-inner {
+    margin: 0 30px;
+}
+
 .crystal {
     width: 100%;
+    margin: 0 auto;
 }
 
 /* ///////////////  MSG Boxes  ///////////////// */
@@ -199,10 +214,6 @@ header h1 {
 }
 
 @media screen and (max-width: 1400px)  { 
-    .numbers {
-        padding: 40px 100px;
-    }
-
     .numbers div {
         width: 350px;
     }
@@ -210,80 +221,187 @@ header h1 {
 
 @media screen and (max-width: 1200px)  { 
     .numbers {
-        padding: 40px 10px;
+        margin: 30px auto;
     }
 
-
-}
-
-@media screen and (max-width: 770px)  { 
-    .container {
-        margin-top: 0px;
-        padding-top: 0px;
-    }
-    .numbers {
-        padding: 20px 10px;
+    .numbers div {
+        width: 290px;
+        height: 130px;
     }
 
-    #computer-number,
-    #guess {
-        float: none;
-        margin: 10px auto;
+    header h1 {
+        font-size: 50px;
+        line-height: 60px;
     }
 
     .crystals-container {
-        margin-top: 100px;
-    }
-    
-}
-
-@media screen and (max-width: 500px)  { 
-    header h1 {
-        font-size: 30px;
-        line-height: 50px;
+        margin: 50px auto;
     }
 
-    .score h3 {
-        font-size: 25px;
-        line-height: 30px;
+    .crystal-box-inner {
+        margin: 0 10px;
     }
 
     .container {
-        margin-top: 0px;
-        padding-top: 0px;
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width: 979px)  { 
+    .container {
+        max-width: 960px;
+    }
+
+    header h1 {
+        font-size: 40px;
     }
 
     .numbers {
-        padding: 20px 10px;
+        margin: 10px auto;
+        width: 590px;
+        font-size: 25px;
+        line-height: 45px;
     }
 
     .numbers div {
         width: 250px;
-        height: 100px;
-    }
-
-    .numbers div h2 {
-        font-size: 25px;
-        line-height: 34px;
-    }
-
-    #computer-number,
-    #guess {
-        float: none;
-        margin: 10px auto;
+        height: auto;
     }
 
     .crystals-container {
-        margin-top: 20px;
+        margin: 30px auto;
     }
 
-    #crys-box2 {
-        clear: both;
+    .crystal-box-inner {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 770px)  {
+    header h1 {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 1.5px;
+        padding-top: 10px;
+    }
+
+    .score {
+        width: 400px;
+        height: 28px;
+        margin: 10px auto 0px auto;
+    }
+
+    .score h3 {
+        font-size: 22px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .numbers {
+        margin: 5px auto;
+        width: auto;
+        max-width: 500px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .numbers div {
+        width: 205px;
+    }
+
+    .crystals-container {
+        margin: 20px auto;
+        width: 420px;
     }
 
     .crystal-box {
-        width: 150px;
-
+        width: 210px;
+        height: 210px;
+        /* float: left; */
     }
-    
+}
+
+@media screen and (max-width: 500px)  { 
+    header h1 {
+        font-size: 24px;
+        line-height: 35px;
+        letter-spacing: .5px;
+    }
+
+    .score {
+        width: 300px;
+        height: 28px;
+        margin: 5px auto 0px auto;
+    }
+
+    .score h3 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .numbers {
+        font-size: 15px;
+        letter-spacing: -.5px;
+        max-width: 380px;
+    }
+
+    .numbers div {
+        width: 150px;
+    }
+
+    .crystals-container {
+        margin: 20px auto;
+        width: 390px;
+    }
+
+    .crystal-box {
+        width: 195px;
+        height: 195px;
+    }
+
+    .crystal-box-inner {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 425px)  {
+    header h1 {
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 0px;
+    }
+
+    .score h3 {
+        font-size: 15px;
+    }
+
+    .score {
+        width: 240px;
+    }
+
+    .numbers {
+        margin: 0px 7px;
+        line-height: 22px;
+        min-width: 306px;
+    }
+
+    .numbers div{
+        width: 140px;
+    }
+
+    .crystals-container {
+        margin: 10px auto;
+        width: 290px;
+    }
+
+    .crystal-box {
+        width: 145px;
+        height: 145px;
+    }
+
+    .container {
+        padding: 15px 0;
+    }
 }

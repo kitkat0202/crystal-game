@@ -60,13 +60,13 @@ $(function() {
     }
 
     $("#start-btn").on("click", function() {
-        // playAudio()
+        playAudio()
         clearAll()
     })
     
     $(".crystal-box").on("click", function() {
         if (clickOn) {
-            // playAudio()
+            playAudio()
             totalSoFar += parseInt($(this).attr("value"))
             $("#total").html(totalSoFar)
             console.log($(this).attr("value"))

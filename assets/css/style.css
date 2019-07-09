@@ -151,17 +151,17 @@ header h1 {
 /* ///////////////  MSG Boxes  ///////////////// */
 .gameover {
     position: absolute;
-    width: 70%;
-    height: 300px;
-    background-color: #ffffffd3;
-    top: 250px;
+    top: 0;
     left: 50%;
-    margin-left: -35%;
+    width: 600px;
+    height: 300px;
+    margin-left: -300px;
+    background-color: #ffffffd3;
     border-radius: 10px;
     text-align: center;
     font-family: var(--title);
     padding: 40px;
-    font-size: 80px;
+    font-size: 70px;
     line-height: 100px;
     box-shadow: 20px 20px 10px 0px #70707060;
 }
@@ -275,6 +275,22 @@ header h1 {
     .crystal-box-inner {
         margin: 0 5px;
     }
+
+    .gameover {
+        width: 500px;
+        height: 250px;
+        margin-left: -250px;
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .start-msg button {
+        width: 220px;
+        height: 70px;
+        font-size: 40px;
+        letter-spacing: 3px;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 770px)  {
@@ -319,7 +335,26 @@ header h1 {
     .crystal-box {
         width: 210px;
         height: 210px;
-        /* float: left; */
+    }
+
+    .gameover {
+        width: 400px;
+        height: 220px;
+        margin-left: -200px;
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .start-msg button {
+        width: 200px;
+        height: 60px;
+        font-size: 30px;
+        letter-spacing: 2.5px;
+        margin-top: 20px;
+    }
+
+    .start-msg p {
+        font-size: 16px;
     }
 }
 
@@ -364,6 +399,25 @@ header h1 {
     .crystal-box-inner {
         margin: 0 10px;
     }
+
+    .gameover {
+        width: 350px;
+        height: 200px;
+        margin-left: -175px;
+        font-size: 35px;
+        line-height: 55px;
+    }
+
+    .start-msg button {
+        width: 170px;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        margin-top: 10px;
+    }
+
+    .start-msg p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 425px)  {
@@ -403,5 +457,26 @@ header h1 {
 
     .container {
         padding: 15px 0;
+    }
+
+    .gameover {
+        padding: 30px 20px;
+        width: 280px;
+        height: 200px;
+        margin-left: -140px;
+        font-size: 28px;
+        line-height: 55px;
+    }
+
+    .start-msg button {
+        width: 150px;
+        height: 50px;
+        font-size: 25px;
+        letter-spacing: 1.5px;
+    }
+
+    .start-msg p {
+        font-size: 15px;
+        margin-top: 10px;
     }
 }

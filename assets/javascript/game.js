@@ -69,7 +69,7 @@ $(function() {
             playAudio()
             totalSoFar += parseInt($(this).attr("value"))
             $("#total").html(totalSoFar)
-            console.log($(this).attr("value"))
+            // console.log($(this).attr("value"))
             totalSoFar > computerGuess ? loseSteps() : gameStatus = true
             totalSoFar === computerGuess ? winSteps() : gameStatus = true
         }
